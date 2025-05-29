@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <style>
+             body {
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+                  background-image: url("https://t4.ftcdn.net/jpg/00/93/36/49/360_F_93364974_eoos8QGsa9CzTa5hGRRL6EutXMSKgdOA.jpg");
+                  background-size: cover;
+                  font-weight: bold;
+                  color: black;
+                  text-align: center;
+              }
+
+              h1 {
+                  color: red;
+              }
+
+              #message-el {
+                  font-style: italic;
+              }
+
+              button {
+                  color: #016f32;
+                  width: 150px;
+                  background: red;
+                  padding-top: 5px;
+                  padding-bottom: 5px;
+                  font-weight: bold;
+                  border: none;
+                  border-radius: 2px;
+                  margin-bottom: 2px;
+                  margin-top: 2px;
+              }
+        </style>
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
+        <script>
+          let cards = []
+          let sum = 0
+          let hasBlackJack = false
+          let isAlive = false
+          let message = ""
+
+          const messageEl = document.getElementById("message-el")
+          const sumEl = document.getElementById("sum-el")
+          const cardsEl = document.getElementById("cards-el")
+          const playerEl = document.getElementById("player-el")
+          let playerName="Brianna" 
+          playerEl.textContent= "Player: Brianna"
+             function getRandomCard() {
+                let randomNumber = Math.floor(Math.random() * 13) + 1
+                if (randomNumber > 10) {
+                    return 10 
+                } else if (randomNumber === 1) {
+                    return 11 
+                } else {
+                    return randomNumber 
+                }
+            }
+
+            function startGame() {
+               isAlive = true 
+               hasBlackJack = false 
+                  let firstCard = getRandomCard()
+                  let secondCard = getRandomCard()
+                  cards = [firstCard, secondCard]
+                  sum = firstCard + secondCard
+            renderGame()
+}
+
+           function renderGame() {
+    cardsEl.textContent = "Cards: " + cards.join(" ")
+    sumEl.textContent = "Sum: " + sum
+
+    if (sum < 21) {
+        message = "Would you like to draw a new card?"
+    } else if (sum === 21) {
+        message = "Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+        function newCard() {
+    if (isAlive && !hasBlackJack) { 
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+    }
+}
+
+          
+          
+
+
+      </script>
+    </body>
+</html>
