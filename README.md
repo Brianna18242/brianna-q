@@ -16,22 +16,23 @@ My portfolio website acts as a central hub for showcasing my best work. It inclu
 - Project descriptions and visuals for each featured project  
 - Links to live versions of each project for visitors to explore  
 
-🚀 Featured Projects
+🧩 Featured Projects
+🎯 Hangman
+A classic word-guessing game where players try to reveal a hidden word letter by letter before running out of chances.
 
-🏀 **Flappy Ball**  
-A fun twist on the classic Flappy Bird game — this version features a bouncing ball navigating through pipes. Built with JavaScript, the game includes gravity, collision detection, and keyboard controls to challenge the player’s timing and reflexes.
+🔐 Password Generator
+Creates secure, randomized passwords based on user-selected criteria like length and character types. Great for practicing form handling and string manipulation.
 
-🏆 **Cup Pong**  
-This is a simple web-based version of the classic cup pong game. Players aim and shoot a virtual ball to land in cups. The project allowed me to experiment with angle mechanics, shooting strength, and user interaction through mouse input.
+🍪 Fortune Cookie
+Generates a random fortune each time the cookie is "opened." A fun way to practice DOM interaction and randomization.
 
-🥠 **Fortune Cookie Generator**  
-A lighthearted app that displays a random fortune each time a user "cracks" the cookie. I used arrays and randomization in JavaScript to make every interaction unique. It’s a fun way to practice core JavaScript skills in a creative project.
+🟡 Flappy Ball
+An arcade-style game inspired by Flappy Bird, where players tap to keep the ball afloat while avoiding obstacles.
 
----
+♠️ Black Jack
+A browser-based card game where players compete against the dealer to hit 21 without going over. Includes scoring logic and interactive controls.---
 
 Thanks for visiting my portfolio and taking the time to explore my work!
-
-
 
 
 
