@@ -53,6 +53,96 @@
 div.b {
   text-align: left;
 }
+   .image-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            border: 8px solid black;
+        }
+
+        .hover-text {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .image-container:hover .hover-text {
+            display: block;
+        }
+
+        li:hover {
+            background-color: white;
+            color: white;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #040c36;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+     .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+  .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-block {
+            position: relative;
+            border: 6px solid #333;
+            padding: 20px;
+            background-color: white;
+            transition: background-color 0.3s, transform 0.2s;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .project-block:hover {
+            background-color: #ffc8dd;
+            transform: scale(1.05);
+        }
+
+        .project-block a {
+            color: black; 
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .project-block img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
   </style>
  </head>
 <body> 
@@ -73,6 +163,35 @@ div.b {
      <p> Loops</p> 
      <p> Conditional Statement</p>
    <ul/>
+   <h2>AP Computer Science Projects</h2>
+        <div class="project-grid">
+            <div class="project-block">
+                <a href="https://codepen.io/bri_111/pen/dPyzrqo" target="_blank">Hangman Game</a>
+              <p>The hangman game we all played on the white board in school is now available digitally!</p>
+                <img src="https://play-lh.googleusercontent.com/Eg8Swxv4VMMs-l8r0yzCDVX-Mr6RZiztBFieLfdjH9c5Apn4BoOJT4sMC5Vx5gNnfg" alt="Hangman">
+            </div>
+            <div class="project-block">
+                <a href="https://codepen.io/bri_111/pen/wBvqrdv" target="_blank">Flappy Ball</a>
+              <p>Similar to the popular "Flappy Bird" avoid the obstacles to raise your score!</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjC3kEm3pgYzKPij3yVx1T-vLCD0qh0D1Kw&s" alt="Flappy Ball">
+            </div>
+            <div class="project-block">
+                <a href="https://codepen.io/Ingrid-Molina-Arellano/pen/XJWZgBa" target="_blank">Fortune Cookie</a>
+              <p>The Fortune Cookie project is designed for the user to interact and get a message to display a fortune.</p>
+                <img src="https://assets.dragoart.com/images/10051_501/how-to-draw-a-fortune-cookie-fortune-cookie_5e4c962ca64818.42712136_44323_3_4.jpg" alt="Fortune Cookie">
+            </div>
+            <div class="project-block">
+                <a href="https://codepen.io/bri_111/pen/PwoWbaO" target="_blank">BlackJack Game</a>
+              <p>You Vs. Computer. Whos the better black jack player?</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2boHE6k0_CvcRjhtMkzpchsLUv734aJ7wg&s">
+            </div>
+            <div class="project-block">
+                <a href="https://codepen.io/bri_111/pen/emNNPQE" target="_blank">Password Generator</a>
+              <p>Need a secure password? Give this website a try!</p>
+                <img src="https://www.scaler.com/topics/images/password-generator-cpp-thumbnail.webp" alt="Password Generator">
+            </div>
+        </div>
+
    
      <h2>About the programmer</h2>
      <div class="b">
@@ -81,10 +200,8 @@ div.b {
 <style> a:hover {
   background-color: pink;
   font-size: 18px;
-}
-       </style>     
-   </ol>
-   
+  }
+     
   </main>
 </body>
 <footer> 
