@@ -35,7 +35,7 @@ Thanks for visiting my portfolio and taking the time to explore my work!
 
 
 
--[Github Repository]()
+-[Github Repository](https://github.com/Brianna18242/brianna-q)
 
 
 -[Live Website](https://brianna18242.github.io/brianna-q/)
